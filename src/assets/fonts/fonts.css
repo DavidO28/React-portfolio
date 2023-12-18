@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'PlusJakarta';
+    src: url('PlusJakartaSansVariableFont_wght.eot');
+    src: url('PlusJakartaSansVariableFont_wght.eot') format('embedded-opentype'),
+         url('PlusJakartaSansVariableFont_wght.woff2') format('woff2'),
+         url('PlusJakartaSansVariableFont_wght.woff') format('woff'),
+         url('PlusJakartaSansVariableFont_wght.ttf') format('truetype'),
+         url('PlusJakartaSansVariableFont_wght.svg#PlusJakartaSansVariableFont_wght') format('svg');
+}
+body {
+    font-family: 'PlusJakarta';
+  }
+

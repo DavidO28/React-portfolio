@@ -1,0 +1,142 @@
+.swiper-slide {
+    height: 100vh;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 70px;
+    height: 70px;
+    z-index: 999999999999999 !important;
+    color: black;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    width: 40px;
+    height: 40px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: black;
+    color: white;
+}
+
+.swiper-button-prev {
+    top: calc(100% - 65px);
+    left: 25%;
+}
+
+.swiper-button-next {
+    top: calc(100% - 65px);
+    right: 25%;
+}
+
+.swiper-pagination,
+.swiper-pagination-clickable,
+.swiper-pagination-bullets,
+.swiper-pagination-horizontal {
+    bottom: 27px !important;
+    width: 50% !important;
+    left: 25% !important;
+    z-index: 999999999 !important;
+}
+
+@media only screen and (max-width: 1023px) {
+
+    .swiper-pagination,
+    .swiper-pagination-clickable,
+    .swiper-pagination-bullets,
+    .swiper-pagination-horizontal {
+        display: none;
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    color: black;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.swiper-pagination-bullet-active {
+    background: rgba(255, 0, 0, 0.5);
+}
+
+/* .swiper-pagination,
+.swiper-pagination-progressbar,
+.swiper-pagination-horizontal {
+    top: 90% !important;
+    width: 50% !important;
+    left: 25% !important;
+}
+
+.swiper-pagination-progressbar-fill {
+    background: red !important;
+} */
+
+.custom-progressbar {
+    position: absolute;
+    z-index: 99999999;
+    top: 0;
+    left: 0;
+    width: 33%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    animation: slide-in-left 0.8s;
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(1000%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.bar2 {
+    width: 66%;
+    padding-left: 33%;
+}
+
+.bar3 {
+    width: 100%;
+    padding-left: 66%;
+}
+
+
+
+.snowfall {
+    background-image: url(../../assets/images/1.png), url(../../assets/images/2.png), url(../../assets/images/3.png);
+    animation: Snowfall 20s linear infinite;
+    height: 100vh;
+    width: 100%;
+}
+
+@keyframes Snowfall {
+    from {
+        background-position: left, top, left;
+    }
+
+    to {
+        background-position: bottom, right, bottom;
+    }
+}

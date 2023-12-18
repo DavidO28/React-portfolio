@@ -1,0 +1,22 @@
+.header {
+    position: absolute;
+    width: 280px;
+    bottom: 32px;
+    left: calc(50% - 135px);
+    user-select: none;
+    color: white;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30px;
+    list-style-type: none;
+}
+
+@media only screen and (max-width: 1023px) {
+    .header {
+        display: none;
+    }
+}
